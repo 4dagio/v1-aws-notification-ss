@@ -35,5 +35,5 @@ app.get('/', (req, res) => {
         });
 
 });
-
-app.listen(3000, () => console.log('SMS Service Listening on PORT 3000'))
+const port = process.env.port || 3000
+app.listen(port, () => console.log('SMS Service Listening on PORT 3000'))
